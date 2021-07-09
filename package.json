@@ -1,15 +1,12 @@
 {
-  "name": "expresspractice",
+  "name": "express",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "type": "module",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "node": "^16.4.0",
-    "node-bin-setup": "^1.0.6",
-    "nvm": "^0.0.4"
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
