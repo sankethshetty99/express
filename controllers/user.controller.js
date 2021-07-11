@@ -4,6 +4,6 @@
 
 
 function userCtrl(req, res, next){
-    res.send("hi")
+    res.send("<h1>hi updated</h1>")
 }
 export default userCtrl
