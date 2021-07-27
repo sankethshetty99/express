@@ -1,0 +1,20 @@
+
+ocker build . -t express-image
+docker image ps
+docker ps
+
+docker run -p 3000:3000 --name express-app -d express-image
+docker rm -f 5371623ad166
+
+
+// for alpine
+docker exec -it express-app  ash
+
+=====================================================================
+Bind mount
+sync a local folder on locahost into the docker container
+
+
+
+
+
