@@ -13,8 +13,18 @@ docker exec -it express-app  ash
 =====================================================================
 Bind mount
 sync a local folder on locahost into the docker container
+-v localpath:containerpath:ro--> one way street
 
+anonymous bind mounts
+-v container/path
+This prevents, for example, node_modules from being deleted when 
+docker volume prune --> deletes all
 
+anonymous volumes is also useful for 
 
+----
+--env
+--env-file
 
-
+-------
+docker rm -fv --> deletes anonymous volumes.

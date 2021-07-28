@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # The reason we copy over these files first separately is because we are taking advantage of the docker build caching the node_modules because its not going to change that often.
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 
-RUN npm install
+RUN npm install && mv node_modules ../
 
 # this copy obv ignores all the dockerignore regex
 COPY . ./
